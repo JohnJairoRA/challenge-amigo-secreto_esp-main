@@ -48,3 +48,16 @@ function actualizarListaAmigos() {
         listaAmigos.appendChild(li);
     });
 }
+// Función para sortear un amigo y mostrar el ganador
+function sortearAmigo() {
+    if (Amigos.length === 0) {
+        alert('No hay amigos en la lista para sortear.');
+        return;
+    }
+
+    const ganadorIndex = Math.floor(Math.random() * Amigos.length);
+    const ganador = Amigos[ganadorIndex];
+
+    const ganadorElemento = document.getElementById('ganador');
+    ganadorElemento.textContent = `El ganador es: ${ganador}`;
+}
