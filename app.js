@@ -61,3 +61,12 @@ function sortearAmigo() {
     const ganadorElemento = document.getElementById('ganador');
     ganadorElemento.textContent = `El ganador es: ${ganador}`;
 }
+// Función para reiniciar el sorteo
+function reiniciarSorteo() {
+    Amigos = [];
+    numeroDeAmigos = 0;
+    document.getElementById('numeroDeAmigos').value = '';
+    document.getElementById('amigo').value = '';
+    document.getElementById('listaAmigos').innerHTML = '';
+    document.getElementById('ganador').textContent = '';
+}
