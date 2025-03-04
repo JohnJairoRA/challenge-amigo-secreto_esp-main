@@ -1,5 +1,5 @@
 <h1 align="center">Amigo Secreto</h1>
-## https://johnjairora.github.io/challenge-amigo-secreto_esp-main/
+
 ## Definiciones de las Propiedades
 Estas son las propiedades implementadas dentro de las funciones:
 
