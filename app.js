@@ -37,3 +37,14 @@ function agregarAmigo() {
         amigoInput.value = ''; // Limpiar la caja de texto
     }
 }
+// Función para actualizar la lista de amigos en la página
+function actualizarListaAmigos() {
+    const listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = ''; // Limpiar la lista actual
+
+    Amigos.forEach((amigo, index) => {
+        const li = document.createElement('li');
+        li.textContent = `${index + 1}. ${amigo}`;
+        listaAmigos.appendChild(li);
+    });
+}
